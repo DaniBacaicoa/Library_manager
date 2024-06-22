@@ -60,11 +60,11 @@ python pdf_library_manager.py
 
 
 ## Project Structure
-pdf-library-manager-chatbot/
+Library_manager/
 
 │
 
-├── pdf_library_manager.py  # Main script
+├── src_library_manager.py  # Main script
 
 ├── README.md               # Project description
 
