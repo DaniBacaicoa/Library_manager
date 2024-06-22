@@ -36,7 +36,8 @@ cd pdf-library-manager-chatbot
 ```
 
 2. Install the required Python packages:
-3. 
+
+3. Interact with the chatbot by asking questions about the content of your PDFs.
 ```bash
 pip install transformers nltk PyPDF2 sentence-transformers
 ```
