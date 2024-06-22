@@ -61,9 +61,13 @@ python pdf_library_manager.py
 
 ## Project Structure
 pdf-library-manager-chatbot/
+
 │
+
 ├── pdf_library_manager.py  # Main script
+
 ├── README.md               # Project description
+
 └── requirements.txt        # List of dependencies
 
 
