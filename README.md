@@ -19,10 +19,10 @@ Examples:
 - `[B] 2019 - Lipschitz Functions (Cobzas-Miculescu-Nicolae, 2019).pdf`
 
 Where:
-- `Type` is either `B` for book or `TB` for textbook.
+- `Type` is either `B` for book or `TB` for textbook. (There may exist other type)
 - `year` is the publication year.
 - `Title` is the title of the book.
-- `authors` are the authors of the book.
+- `authors` are the first surname of the authors of the book separated with -.
 - `edition` is the edition of the book (optional).
 - `year` at the end is the publication year (optional).
 
@@ -39,7 +39,7 @@ cd pdf-library-manager-chatbot
 
 3. Interact with the chatbot by asking questions about the content of your PDFs.
 ```bash
-pip install transformers nltk PyPDF2 sentence-transformers
+pip install -r requirements.txt
 ```
 
 3. Download NLTK data:
@@ -58,24 +58,6 @@ python pdf_library_manager.py
 ```
 4. Interact with the chatbot by asking questions about the content of your PDFs.
 
-
-## Project Structure
-Library_manager/
-
-│
-
-├── src_library_manager.py  # Main script
-
-├── README.md               # Project description
-
-└── requirements.txt        # List of dependencies
-
-
-## Example 
-Welcome to the PDF Library Manager Chatbot!
-Ask a question or type 'exit' to quit: What is a Lipschitz function?
-Best match found in: Lipschitz Functions by Cobzas-Miculescu-Nicolae with similarity score of 0.8754
-Type: B, Year: 2019, Edition: None, Final Year: 2019****
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
