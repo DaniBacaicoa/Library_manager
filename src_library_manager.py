@@ -36,7 +36,7 @@ def preprocess_text(text):
     tokens = [word for word in tokens if word.lower() not in stopwords]
     return ' '.join(tokens)
 
-# Create embeddings for the text
+
 def create_embeddings(texts):
     embeddings = {}
     for filename, text in texts.items():
