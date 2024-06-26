@@ -8,8 +8,9 @@ from sentence_transformers import SentenceTransformer, util
 nltk.download('punkt')
 nltk.download('stopwords')
 
-# Initialize variables
-pdf_folder_path = 'path_to_your_pdf_folder'  # Update this path
+
+
+folder = 'H:\Mi unidad\Biblioteca\Mathematics\Analysis'  
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Function to read PDFs and extract text
