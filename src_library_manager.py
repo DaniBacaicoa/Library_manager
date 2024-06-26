@@ -28,7 +28,7 @@ def extract_text_from_pdfs(pdf_folder):
                 pdf_texts[filename] = text
     return pdf_texts
 
-# Preprocess text using NLTK
+
 def preprocess_text(text):
     tokens = nltk.word_tokenize(text)
     tokens = [word for word in tokens if word.isalnum()]
