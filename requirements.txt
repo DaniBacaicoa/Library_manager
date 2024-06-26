@@ -1,0 +1,5 @@
+transformers 
+nltk 
+PyPDF2 
+sentence-transformers
+notebook
