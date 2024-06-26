@@ -13,17 +13,18 @@ nltk.download('stopwords')
 folder = 'H:\Mi unidad\Biblioteca\Mathematics\Analysis'  
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
-# Function to read PDFs and extract text
+
 def extract_text_from_pdfs(pdf_folder):
     pdf_texts = {}
     for filename in os.listdir(pdf_folder):
         if filename.endswith('.pdf'):
             pdf_path = os.path.join(pdf_folder, filename)
             with open(pdf_path, 'rb') as file:
-                reader = PyPDF2.PdfFileReader(file)
+                reader = PyPDF2.PdfReader(file)
                 text = ''
-                for page_num in range(reader.numPages):
-                    text += reader.getPage(page_num).extractText()
+                for page_num in range(len(reader.pages)):
+                    text += reader.pages[page_num].extract_text()
+                    
                 pdf_texts[filename] = text
     return pdf_texts
 
